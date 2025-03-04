@@ -1,0 +1,23 @@
+// Mixin para imágenes con tamaño y ajuste
+@mixin image-styling($width, $height, $object-fit: cover) {
+    width: $width;
+    height: $height;
+    object-fit: $object-fit;
+  }
+  
+  // Mixin para el estilo de los botones
+  @mixin button-styling($background-color, $color, $padding: $button-padding, $font-size: $button-font-size) {
+    display: inline-block;
+    background-color: $background-color;
+    color: $color;
+    padding: $padding;
+    font-size: $font-size;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: darken($background-color, 10%);
+    }
+  }
+  
